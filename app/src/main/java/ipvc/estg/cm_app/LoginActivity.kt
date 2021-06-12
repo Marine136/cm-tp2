@@ -19,4 +19,11 @@ class LoginActivity : AppCompatActivity() {
             finish();
         }
     }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finish()
+    }
+
+
 }

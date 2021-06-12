@@ -4,10 +4,10 @@ import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 
-class CalendarioPsicologo : AppCompatActivity() {
+class InformacaoPacientes : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_calendario_psicologo)
+        setContentView(R.layout.activity_informacao_pacientes)
 
         setSupportActionBar(findViewById(R.id.toolbar))
 
@@ -23,10 +23,8 @@ class CalendarioPsicologo : AppCompatActivity() {
             actionBar.setDisplayHomeAsUpEnabled(true)
 
             // Set toolbar title/app title
-            actionBar.title = "Calendário de Consultas"
+            actionBar.title = "Informação de Paciente"
         }
-
-
     }
 
     // this event will enable the back

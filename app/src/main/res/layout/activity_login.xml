@@ -46,6 +46,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/username"
             android:layout_width="match_parent"
+            android:fontFamily="@font/comfortaa_bold"
             android:layout_height="wrap_content"
             android:inputType="textPersonName" />
 
@@ -77,6 +78,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/password"
             android:layout_width="match_parent"
+            android:fontFamily="@font/comfortaa_bold"
             android:layout_height="wrap_content"
             android:inputType="textPassword" />
 
