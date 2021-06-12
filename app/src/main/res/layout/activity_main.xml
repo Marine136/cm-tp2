@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F2F3F3"
     tools:context=".MainActivity">
 
     <ImageView
@@ -18,33 +19,46 @@
         app:layout_constraintVertical_chainStyle="packed"
         app:srcCompat="@drawable/logo" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonPaciente"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="100dp"
-        android:background="@drawable/custom_button_paciente"
+        android:backgroundTint="#82B5EF"
+        android:elevation="6dp"
         android:fontFamily="@font/comfortaa_bold"
         android:padding="10dp"
         android:text="Sou Paciente"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:cornerRadius="20dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonPsicologo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonPsicologo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="100dp"
-        android:background="@drawable/custom_button_psicologo"
+        android:backgroundTint="#C6CDA6"
+        android:elevation="6dp"
         android:padding="10dp"
+        android:fontFamily="@font/comfortaa_bold"
         android:text="Sou Psicólogo"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
