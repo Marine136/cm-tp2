@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F3F3"
+    tools:context=".MarcarConsulta">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/utente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="Utente: xxxx"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <TextView
+        android:id="@+id/tipoConsulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="Tipo Consulta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/utente" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/spinnerTipoConsulta"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/utente"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:hint="Tipo Consulta"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tipoConsulta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tipoConsulta"
+        app:layout_constraintTop_toTopOf="@+id/tipoConsulta">
+
+        <AutoCompleteTextView
+            android:id="@+id/txtCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:clickable="false"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtHorario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtHorario">
+
+        <RadioButton
+            android:id="@+id/primeiroHorario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/comfortaa_bold"
+            android:text="Primeiro Horário Disponível" />
+
+        <RadioButton
+            android:id="@+id/escolherHorario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:fontFamily="@font/comfortaa_bold"
+            android:text="Escolher Período de Marcação" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtHorario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="Horário"
+        app:layout_constraintEnd_toEndOf="@+id/tipoConsulta"
+        app:layout_constraintStart_toStartOf="@+id/tipoConsulta"
+        app:layout_constraintTop_toBottomOf="@+id/tipoConsulta" />
+
+    <CalendarView
+        android:id="@+id/calendarioMarcarConsulta"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="8dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonConfirmarEditar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#C6CDA6"
+        android:elevation="6dp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:padding="10dp"
+        android:text="Marcar"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonCancelarEditar"
+        app:layout_constraintTop_toBottomOf="@+id/calendarioMarcarConsulta" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonCancelarEditar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#ff6961"
+        android:elevation="6dp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:padding="10dp"
+        android:text="Cancelar"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonConfirmarEditar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarioMarcarConsulta" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

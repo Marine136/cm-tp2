@@ -18,13 +18,14 @@ class ScreenPsicologo : AppCompatActivity() {
 
         val cardDefinicoes = findViewById<CardView>(R.id.cardDefinicoes)
         cardDefinicoes.setOnClickListener {
-            val intent = Intent(this, DefinicoesUsers::class.java);
-            startActivity(intent);
+            val intent = Intent(this, DefinicoesUsers::class.java)
+            startActivity(intent)
         }
-    }
 
-    override fun onBackPressed() {
-        super.onBackPressed()
-
+        val cardInfoPacientes = findViewById<CardView>(R.id.cardPacientes)
+        cardInfoPacientes.setOnClickListener {
+            val intent = Intent(this, InformacaoPacientes::class.java)
+            startActivity(intent)
+        }
     }
 }

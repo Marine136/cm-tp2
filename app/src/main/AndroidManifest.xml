@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CMapp">
-        <activity android:name=".InformacaoPacientes"></activity>
+        <activity android:name=".MarcarConsulta"></activity>
+        <activity android:name=".Questionarios" />
+        <activity android:name=".CalendarioPaciente" />
+        <activity android:name=".ScreenPaciente" />
+        <activity android:name=".InformacaoPacientes" />
         <activity android:name=".DefinicoesUsers" />
         <activity android:name=".CalendarioPsicologo" />
         <activity android:name=".ScreenPsicologo" />

@@ -14,9 +14,10 @@ class LoginActivity : AppCompatActivity() {
         val buttonLogin = findViewById<Button>(R.id.butonLogin)
 
         buttonLogin.setOnClickListener {
-            val intent = Intent(this, ScreenPsicologo::class.java)
+            //val intent = Intent(this, ScreenPsicologo::class.java)
+            val intent = Intent(this, ScreenPaciente::class.java)
             startActivity(intent)
-            finish();
+            finish()
         }
     }
 

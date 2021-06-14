@@ -36,27 +36,27 @@ class DefinicoesUsers : AppCompatActivity() {
         val buttonCancelar = findViewById<Button>(R.id.buttonCancelarEditar)
         val buttonEditar = findViewById<Button>(R.id.buttonEditarPerfil)
         buttonEditar.setOnClickListener {
-            txtEmail.isEnabled = true;
-            txtTlm.isEnabled = true;
-            buttonEditar.isVisible = false;
-            buttonGuardar.isVisible = true;
-            buttonCancelar.isVisible = true;
+            txtEmail.isEnabled = true
+            txtTlm.isEnabled = true
+            buttonEditar.isVisible = false
+            buttonGuardar.isVisible = true
+            buttonCancelar.isVisible = true
         }
 
         buttonGuardar.setOnClickListener {
-            txtEmail.isEnabled = false;
-            txtTlm.isEnabled = false;
-            buttonEditar.isVisible = true;
-            buttonCancelar.isVisible = false;
-            buttonGuardar.isVisible = false;
+            txtEmail.isEnabled = false
+            txtTlm.isEnabled = false
+            buttonEditar.isVisible = true
+            buttonCancelar.isVisible = false
+            buttonGuardar.isVisible = false
         }
 
         buttonCancelar.setOnClickListener {
-            txtEmail.isEnabled = false;
-            txtTlm.isEnabled = false;
-            buttonEditar.isVisible = true;
-            buttonCancelar.isVisible = false;
-            buttonGuardar.isVisible = false;
+            txtEmail.isEnabled = false
+            txtTlm.isEnabled = false
+            buttonEditar.isVisible = true
+            buttonCancelar.isVisible = false
+            buttonGuardar.isVisible = false
         }
     }
 
