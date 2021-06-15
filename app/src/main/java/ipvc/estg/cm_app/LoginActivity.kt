@@ -18,6 +18,8 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent(this, ScreenPaciente::class.java)
             startActivity(intent)
             finish()
+
+            // aa
         }
     }
 
