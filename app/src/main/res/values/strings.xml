@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">CM-app</string>
+    <string name="loginFalhado">Login falhado!</string>
+    <string name="camposVazios">Os campos não podem ficar vazios!</string>
+    <string name="email_invalido">O email inserido não é válido!</string>
+    <string name="emailVazio">O email não pode ficar vazio!</string>
+    <string name="passVazia">A password não pode ficar vazia!</string>
+    <string name="dadosNaoPsicologo">Os dados inseridos não estão registados como psicólogo!</string>
+    <string name="dadosNaoPaciente">Os dados inseridos não estão registados como paciente!</string>
 </resources>

@@ -15,12 +15,16 @@ class MainActivity : AppCompatActivity() {
 
         buttonPaciente.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
+            intent.putExtra("numero", "0")
             startActivity(intent)
+            finish()
         }
 
         buttonPsicologo.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
+            intent.putExtra("numero", "1")
             startActivity(intent)
+            finish()
         }
 
     }

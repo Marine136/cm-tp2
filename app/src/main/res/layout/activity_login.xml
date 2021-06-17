@@ -47,8 +47,7 @@
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:fontFamily="@font/comfortaa_bold"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName" />
+            android:layout_height="wrap_content" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
