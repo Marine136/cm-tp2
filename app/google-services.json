@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "982010848514",
+    "project_id": "cm-app-ee79f",
+    "storage_bucket": "cm-app-ee79f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:982010848514:android:374ec3604d646603424e1b",
+        "android_client_info": {
+          "package_name": "ipvc.estg.cm_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "982010848514-njhahm4r4fa9vu7p8kaqn1eh0m6r31d7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMo1xmBMjf4Z1QzLpR_huhMdZyx4GjNz8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "982010848514-njhahm4r4fa9vu7p8kaqn1eh0m6r31d7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
