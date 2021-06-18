@@ -2,6 +2,8 @@ package ipvc.estg.cm_app
 
 import android.os.Bundle
 import android.view.MenuItem
+import android.view.View
+import android.webkit.WebView
 import androidx.appcompat.app.AppCompatActivity
 
 class InformacaoPacientes : AppCompatActivity() {
@@ -25,6 +27,15 @@ class InformacaoPacientes : AppCompatActivity() {
             // Set toolbar title/app title
             actionBar.title = "Informação de Paciente"
         }
+
+
+        //CARREGAR GRÁFICOS
+        val wv1 = findViewById<WebView>(R.id.chartPaciente)
+
+        wv1.settings.loadsImagesAutomatically = true;
+        wv1.settings.javaScriptEnabled = true;
+        wv1.scrollBarStyle = View.SCROLLBARS_INSIDE_OVERLAY;
+        wv1.loadUrl("https://fixity.pt/cmApp/graph.html");
     }
 
     // this event will enable the back

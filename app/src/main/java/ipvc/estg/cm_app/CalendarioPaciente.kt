@@ -2,6 +2,7 @@ package ipvc.estg.cm_app
 
 import android.os.Bundle
 import android.view.MenuItem
+import android.webkit.WebView
 import androidx.appcompat.app.AppCompatActivity
 
 class CalendarioPaciente : AppCompatActivity() {
